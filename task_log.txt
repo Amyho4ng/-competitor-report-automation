@@ -1,0 +1,12 @@
+>>> USING REPORT_BUILDER FROM: C:\Users\AmyHoang\Competitor_report\-competitor-report-automation\src\report_builder.py
+Traceback (most recent call last):
+  File "C:\Users\AmyHoang\Competitor_report\-competitor-report-automation\src\main.py", line 55, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\AmyHoang\Competitor_report\-competitor-report-automation\src\main.py", line 36, in main
+    print(f"\u23f3 Generating competitor insights for: {period_label}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AmyHoang\AppData\Local\Programs\Python\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u23f3' in position 0: character maps to <undefined>

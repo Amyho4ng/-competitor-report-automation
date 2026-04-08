@@ -25,7 +25,7 @@ def save_report(html_content, start_date, end_date):
     with open(filepath, "w", encoding="utf-8") as f:
         f.write(html_content)
 
-    print(f"✅ Report saved at: {filepath}")
+    print(f" Report saved at: {filepath}")
 
 def main():
     cfg = load_config()
@@ -33,7 +33,7 @@ def main():
     start_date, end_date = get_last_14_days()
     period_label = f"{start_date} to {end_date}"
 
-    print(f"⏳ Generating competitor insights for: {period_label}")
+    print(f" Generating competitor insights for: {period_label}")
 
     summary = generate_competitor_insights(period_label)
 
