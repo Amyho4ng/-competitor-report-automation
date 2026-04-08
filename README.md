@@ -1,4 +1,3 @@
-# -competitor-report-automation
 
 # Competitor Report Automation
 
@@ -24,7 +23,8 @@ Get the key from Nat
 - Open Windows Task Scheduler
 - Create Basic Task called "Competitor Report"
 - Trigger: Weekly, every 2 weeks, pick a Monday at 8am
-- Action: Start a program → browse to run_report.bat
+- Action: Start a program → C:\Users\AmyHoang\Competitor_report\-competitor-report-automation\src\main.py
+``
 
 
 To temporarily pause it:
