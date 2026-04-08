@@ -1,4 +1,3 @@
-# -competitor-report-automation
 
 # Competitor Report Automation
 
