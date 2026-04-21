@@ -1,3 +1,9 @@
+
+import datetime
+
+with open("task_log.txt", "a") as f:
+    f.write(f"STARTED at {datetime.datetime.now()}\n")
+
 import os
 
 import report_builder
@@ -53,3 +59,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+    
+with open("task_log.txt", "a") as f:
+    f.write(f"FINISHED at {datetime.datetime.now()}\n")

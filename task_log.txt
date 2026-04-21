@@ -1,12 +1,266 @@
 >>> USING REPORT_BUILDER FROM: C:\Users\AmyHoang\Competitor_report\-competitor-report-automation\src\report_builder.py
-Traceback (most recent call last):
-  File "C:\Users\AmyHoang\Competitor_report\-competitor-report-automation\src\main.py", line 55, in <module>
-    main()
-    ~~~~^^
-  File "C:\Users\AmyHoang\Competitor_report\-competitor-report-automation\src\main.py", line 36, in main
-    print(f"\u23f3 Generating competitor insights for: {period_label}")
-    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\AmyHoang\AppData\Local\Programs\Python\Python314\Lib\encodings\cp1252.py", line 19, in encode
-    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
-           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-UnicodeEncodeError: 'charmap' codec can't encode character '\u23f3' in position 0: character maps to <undefined>
+ Generating competitor insights for: 2026-03-25 to 2026-04-08
+
+[Manuka]
+    Fetching: https://www.manuka.com/news/
+    [scrape] Could not fetch https://www.manuka.com/news/: HTTPSConnectionPool(host='www.manuka.com', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)')))
+    Found 0 verified recent articles
+
+[Infosys]
+    Fetching: https://www.infosys.com/newsroom/
+    [scrape] Could not fetch https://www.infosys.com/newsroom/: 403 Client Error: Forbidden for url: https://www.infosys.com/newsroom/
+    Fetching: https://www.infosys.com/insights/
+    [scrape] Could not fetch https://www.infosys.com/insights/: 403 Client Error: Forbidden for url: https://www.infosys.com/insights/
+    Found 0 verified recent articles
+
+[Dufrain]
+    Fetching: https://www.dufrain.co.uk/insights/
+    [scrape] Could not fetch https://www.dufrain.co.uk/insights/: 404 Client Error: Not Found for url: https://www.dufrain.co.uk/insights/
+    Fetching: https://www.dufrain.co.uk/news/
+    [scrape] Could not fetch https://www.dufrain.co.uk/news/: 404 Client Error: Not Found for url: https://www.dufrain.co.uk/news/
+    Found 0 verified recent articles
+
+[Billigence]
+    Fetching: https://www.billigence.com/news/
+    [scrape] Could not fetch https://www.billigence.com/news/: 403 Client Error: Forbidden for url: https://www.billigence.com/news/
+    Fetching: https://www.billigence.com/blog/
+    [scrape] Could not fetch https://www.billigence.com/blog/: 403 Client Error: Forbidden for url: https://www.billigence.com/blog/
+    Found 0 verified recent articles
+
+[Unifeye]
+    Fetching: https://www.unifeye.com/news/
+    [scrape] Could not fetch https://www.unifeye.com/news/: HTTPSConnectionPool(host='www.unifeye.com', port=443): Max retries exceeded with url: /news/ (Caused by NameResolutionError("HTTPSConnection(host='www.unifeye.com', port=443): Failed to resolve 'www.unifeye.com' ([Errno 11001] getaddrinfo failed)"))
+    Fetching: https://www.unifeye.com/blog/
+    [scrape] Could not fetch https://www.unifeye.com/blog/: HTTPSConnectionPool(host='www.unifeye.com', port=443): Max retries exceeded with url: /blog/ (Caused by NameResolutionError("HTTPSConnection(host='www.unifeye.com', port=443): Failed to resolve 'www.unifeye.com' ([Errno 11001] getaddrinfo failed)"))
+    Found 0 verified recent articles
+
+[Lumilinks]
+    Fetching: https://www.lumilinks.com/news/
+    [scrape] Could not fetch https://www.lumilinks.com/news/: 404 Client Error: Not Found for url: https://www.lumilinks.com/news/
+    Fetching: https://www.lumilinks.com/blog/
+    Found 1 verified recent articles
+
+[NTT Data]
+    Fetching: https://www.nttdata.com/global/en/media/press-release
+    [scrape] Could not fetch https://www.nttdata.com/global/en/media/press-release: 404 Client Error: Not Found for url: https://www.nttdata.com/global/en/404
+    Fetching: https://www.nttdata.com/global/en/insights/news
+    [scrape] Could not fetch https://www.nttdata.com/global/en/insights/news: 404 Client Error: Not Found for url: https://www.nttdata.com/global/en/404
+    Found 0 verified recent articles
+
+[Capgemini]
+    Fetching: https://www.capgemini.com/gb-en/news/
+    Fetching: https://www.capgemini.com/gb-en/insights/
+    Found 2 verified recent articles
+
+[Version 1]
+    Fetching: https://www.version1.com/news/
+    Fetching: https://www.version1.com/blog/
+    Found 4 verified recent articles
+
+[Oakland]
+    Fetching: https://www.oakland.io/news/
+    Fetching: https://www.oakland.io/blog/
+    Found 0 verified recent articles
+
+[CACI]
+    Fetching: https://www.caci.co.uk/news/
+    Fetching: https://www.caci.co.uk/blog/
+    Found 1 verified recent articles
+
+[Cognizant]
+    Fetching: https://news.cognizant.com/
+    Fetching: https://www.cognizant.com/en_us/news.html
+    Found 1 verified recent articles
+
+[Made Tech]
+    Fetching: https://www.madetech.com/news/
+    [scrape] Could not fetch https://www.madetech.com/news/: 403 Client Error: Forbidden for url: https://www.madetech.com/news/
+    Fetching: https://www.madetech.com/blog/
+    [scrape] Could not fetch https://www.madetech.com/blog/: 403 Client Error: Forbidden for url: https://www.madetech.com/blog/
+    Found 0 verified recent articles
+
+[BAE Systems Digital Intelligence]
+    Fetching: https://www.baesystems.com/en/digital/home
+    [scrape] Could not fetch https://www.baesystems.com/en/digital/home: 403 Client Error: Forbidden for url: https://www.baesystems.com/en/digital/home
+    Fetching: https://www.baesystems.com/en/our-company/news-room
+    [scrape] Could not fetch https://www.baesystems.com/en/our-company/news-room: 403 Client Error: Forbidden for url: https://www.baesystems.com/en/our-company/news-room
+    Found 0 verified recent articles
+
+[Civica]
+    Fetching: https://www.civica.com/en-gb/news/
+    Fetching: https://www.civica.com/en-gb/blog/
+    [scrape] Could not fetch https://www.civica.com/en-gb/blog/: 404 Client Error: Not Found for url: https://www.civica.com/en-gb/blog/
+    Found 0 verified recent articles
+
+[Telefonica Tech]
+    Fetching: https://telefonicatech.com/en/newsroom/
+    [scrape] Could not fetch https://telefonicatech.com/en/newsroom/: 404 Client Error: Not Found for url: https://telefonicatech.com/en/newsroom
+    Fetching: https://telefonicatech.com/en/blog/
+    Found 11 verified recent articles
+
+[Ernst and Young]
+    Fetching: https://www.ey.com/en_uk/newsroom
+    Fetching: https://www.ey.com/en_uk/insights
+    Found 0 verified recent articles
+
+[CGI]
+    Fetching: https://www.cgi.com/en/newsroom
+    Fetching: https://www.cgi.com/en/blog
+    Found 1 verified recent articles
+
+[Equal Experts]
+    Fetching: https://www.equalexperts.com/blog/
+    Fetching: https://www.equalexperts.com/news/
+    [scrape] Could not fetch https://www.equalexperts.com/news/: 404 Client Error: Not Found for url: https://www.equalexperts.com/news/
+    Found 5 verified recent articles
+
+[Accenture]
+    Fetching: https://newsroom.accenture.com/news/
+    Fetching: https://www.accenture.com/gb-en/blogs/
+    Found 0 verified recent articles
+
+[Devoteam]
+    Fetching: https://www.devoteam.com/press-release/
+    Fetching: https://www.devoteam.com/blog/
+    Found 1 verified recent articles
+
+[Advancing Analytics]
+    Fetching: https://www.advancinganalytics.co.uk/blog
+    Fetching: https://www.advancinganalytics.co.uk/news
+    Found 2 verified recent articles
+
+[Deloitte]
+    Fetching: https://www.deloitte.com/uk/en/about/press-room.html
+    Fetching: https://www.deloitte.com/uk/en/blog.html
+    [scrape] Could not fetch https://www.deloitte.com/uk/en/blog.html: 404 Client Error: Not Found for url: https://www.deloitte.com/uk/en/blog.html
+    Found 1 verified recent articles
+
+[KPMG]
+    Fetching: https://kpmg.com/uk/en/home/media/press-releases.html
+    Fetching: https://kpmg.com/uk/en/home/insights.html
+    Found 2 verified recent articles
+
+[Wipro]
+    Fetching: https://www.wipro.com/newsroom/
+    Fetching: https://www.wipro.com/blogs/
+    Found 0 verified recent articles
+
+[Slalom]
+    Fetching: https://www.slalom.com/insight
+    [scrape] Could not fetch https://www.slalom.com/insight: 404 Client Error: Not Found for url: https://www.slalom.com/insight
+    Fetching: https://www.slalom.com/news
+    [scrape] Could not fetch https://www.slalom.com/news: 404 Client Error: Not Found for url: https://www.slalom.com/news
+    Found 0 verified recent articles
+----- RAW AI SUMMARY START -----
+### Manuka
+- No recent news found in the past two weeks.
+
+### Infosys
+- No recent news found in the past two weeks.
+
+### Dufrain
+- No recent news found in the past two weeks.
+
+### Billigence
+- No recent news found in the past two weeks.
+
+### Unifeye
+- No recent news found in the past two weeks.
+
+### Lumilinks
+- We’re now a Snowflake Premier Partner! (March 26, 2026) — Source: https://www.lumilinks.com/blog/were-now-a-snowflake-premier-partner
+
+### NTT Data
+- No recent news found in the past two weeks.
+
+### Capgemini
+- Energy and utilities (March 30, 2026) — Source: https://www.capgemini.com/gb-en/industries/energy-and-utilities/
+- Analyst recognition (April 01, 2026) — Source: https://www.capgemini.com/gb-en/news/analyst-recognition/
+
+### Version 1
+- Webinars and events (May 13, 2026) — Source: https://www.version1.com/webinars-and-events/
+- About Version 1 (April 01, 2026) — Source: https://www.version1.com/about-version-1/
+- How Oracle AI Agents are revolutionising HCM and SCM (March 30, 2026) — Source: https://www.version1.com/blog/maximise-efficiency-and-drive-innovation-with-oracle-ai-agents-in-hcm-and-scm/
+- “We went from a black box to a glass house.” How global CDMO, PCI Pharma is navigating AI adoption, data readiness, and getting past pilot purgatory (March 26, 2026) — Source: https://www.version1.com/blog/pci-pharma-data-readiness-ai-adoption/
+
+### Oakland
+- No recent news found in the past two weeks.
+
+### CACI
+- Location planning (April 07, 2026) — Source: https://www.caci.co.uk/solutions/reimagine-data-and-ai/location-intelligence/location-planning/
+
+### Cognizant
+- News announcements (April 07, 2026) — Source: https://news.cognizant.com/newsannouncements
+
+### Made Tech
+- No recent news found in the past two weeks.
+
+### BAE Systems Digital Intelligence
+- No recent news found in the past two weeks.
+
+### Civica
+- No recent news found in the past two weeks.
+
+### Telefonica Tech
+- Partners: We are stronger thanks to a solid network of alliances with the best technology partners. (April 08, 2026) — Source: https://telefonicatech.com/en/wearetech/partners
+- IoT Partners Programme (April 06, 2026) — Source: https://telefonicatech.com/en/wearetech/partners/iot-partners-programme
+- Innovation: This is how we innovate in anticipation of our customers' needs. (April 08, 2026) — Source: https://telefonicatech.com/en/wearetech/innovation
+- All about Telefónica Tech (March 26, 2026) — Source: https://telefonicatech.com/en/wearetech
+- Hybrid Cloud: We optimize workloads, scale IT environments, and drive growth to help you stay competitive and achieve your strategic outcomes. (March 30, 2026) — Source: https://telefonicatech.com/en/solutions/hybrid-cloud
+- Cybersecurity: We offer intelligent managed security services that guarantee the cyber resilience of your business, making your digital transformation secure. (April 08, 2026) — Source: https://telefonicatech.com/en/solutions/cyber-security-and-naas
+- AI & Data: We combine data and technology to generate a responsible impact, with Artificial Intelligence at the heart of organizations' digital transformation. (April 07, 2026) — Source: https://telefonicatech.com/en/solutions/ai-and-data
+- IoT & Connectivity: We integrate the capabilities of IoT and managed connectivity to build an interconnected ecosystem that connects devices, data and people in real time. (April 06, 2026) — Source: https://telefonicatech.com/en/solutions/iot-connectivity
+- Small Medium Enterprise: We offer comprehensive solutions that simplify and accelerate the digital transformation of SMEs. (April 07, 2026) — Source: https://telefonicatech.com/en/solutions/sme
+- About our solutions (April 08, 2026) — Source: https://telefonicatech.com/en/solutions
+- Environmental commitment: We believe that digitalisation is key to the green transformation of organisations. (March 26, 2026) — Source: https://telefonicatech.com/en/esg/environmental-commitment
+
+### Ernst and Young
+- No recent news found in the past two weeks.
+
+### CGI
+- Resource center (April 02, 2026) — Source: https://www.cgi.com/en/mediacenter
+
+### Equal Experts
+- AI accelerated delivery (April 01, 2026) — Source: https://www.equalexperts.com/our-services/ai-accelerated-software-delivery/
+- Customer experience (April 01, 2026) — Source: https://www.equalexperts.com/our-services/customer-experience/
+- Modernisation and platforms (April 01, 2026) — Source: https://www.equalexperts.com/our-services/modernisation-and-platforms/
+- Government and public sector (April 02, 2026) — Source: https://www.equalexperts.com/government-and-public-sector/
+- Financial services (April 01, 2026) — Source: https://www.equalexperts.com/financial-services/
+
+### Accenture
+- No recent news found in the past two weeks.
+
+### Devoteam
+- Artificial Intelligence (AI) (April 02, 2026) — Source: https://www.devoteam.com/services/ai-ml/
+
+### Advancing Analytics
+- We’re a British Data Awards 2026 Finalist (March 30, 2026) — Source: https://www.advancinganalytics.co.uk/news/british-data-awards-2026
+- Beginning our journey in Portugal with our first Lisbon roles (March 26, 2026) — Source: https://www.advancinganalytics.co.uk/news/lisbon-roles
+
+### Deloitte
+- Deloitte in the news (April 07, 2026) — Source: https://www.deloitte.com/uk/en/about/recognition/news.html?icid=top_news
+
+### KPMG
+- UK Economic Outlook: Discover the potential impact of US tariffs and the implications for the public finances. (March 27, 2026) — Source: https://kpmg.com/uk/en/insights/economics/uk-economic-outlook.html
+- Make The City Thrive: Exploring London’s future as a global listing destination - and why this matters for UK growth. (March 31, 2026) — Source: https://kpmg.com/content/kpmgpublic/uk/en/insights/advisory/make-the-city-thrive
+
+### Wipro
+- No recent news found in the past two weeks.
+
+### Slalom
+- No recent news found in the past two weeks.
+----- RAW AI SUMMARY END -----
+----- HTML OUTPUT START -----
+<html>
+<head>
+<style>
+body { font-family: Arial, Helvetica, sans-serif; margin: 40px; color: #222; line-height: 1.6; }
+h1 { font-size: 28px; font-weight: bold; margin-bottom: 5px; }
+.date-range { font-size: 16px; color: #555; margin-bottom: 25px; }
+h2 { font-size: 22px; margin-top: 35px; font-weight: bold; color: #333; border-bottom: 1px solid #ddd; padding-bottom: 5px; }
+ul { padding-left: 22px; margin-top: 10px; }
+li { margin-bottom: 10px; }
+a { color: #0066cc; text-decoration: none; }
+</style
+----- HTML OUTPUT END -----
+ Report saved at: C:\Users\AmyHoang\OneDrive - Kubrick Group\Bids and Proposals - competitor analysis\competitor_report_2026-03-25_to_2026-04-08.html
