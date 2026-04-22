@@ -43,7 +43,7 @@ def main():
         html = build_html_report(summary, period_label)
         save_report(html, start_date, end_date)
 
-        print("✅ Report generation complete.")
+        print("Report generation complete.")
         log(f"FINISHED successfully at {datetime.now()}")
     except Exception as e:
         log(f"ERROR at {datetime.now()}: {e}")
