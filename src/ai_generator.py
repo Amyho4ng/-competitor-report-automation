@@ -186,16 +186,20 @@ def format_with_gpt(company: str, links: list[dict]) -> str:
         for i, l in enumerate(links)
     )
 
-    prompt = f"""You are formatting a competitor intelligence report for {company}.
+    prompt = f"""You are writing a monthly competitor intelligence digest for {company}.
 
-Below are real, verified news items with confirmed publication dates.
-Format each one as a single bullet line in this exact format:
-- Headline (Month DD, YYYY) — Source: https://url
+Below are real, verified news items scraped from their website.
+
+Summarise these into concise bullet points — one bullet per distinct topic or theme.
+Each bullet should be a clean, factual sentence describing what the company did or announced.
 
 Rules:
-- Use the date and URL EXACTLY as given. Do not change, invent, or modify anything.
-- Clean up the headline text if it is messy (e.g. remove extra whitespace).
-- One line per item. No preamble, no commentary.
+- No dates in the bullets
+- No URLs or source references
+- No preamble or commentary
+- Start each bullet with *
+- Group similar items into one bullet if they overlap
+- Maximum 10 bullets
 
 Items:
 {link_block}
@@ -204,25 +208,24 @@ Items:
     response = client.chat.completions.create(
         model="gpt-4o-mini",
         messages=[{"role": "user", "content": prompt}],
-        temperature=0.0,
+        temperature=0.2,
     )
 
     raw = response.choices[0].message.content.strip()
-
     bullets = [
         line.strip()
         for line in raw.splitlines()
-        if line.strip().startswith("- ")
+        if line.strip().startswith("*")
     ]
 
     if bullets:
         return f"### {company}\n" + "\n".join(bullets)
     else:
-        return f"### {company}\n- No recent news found in the past two weeks."
+        return f"### {company}\n* No recent news found in the past two weeks."
 
 
 def generate_competitor_insights(period_label: str) -> str:
-    cutoff = datetime.today() - timedelta(weeks=2)
+    cutoff = datetime.today() - timedelta(days=14)
     sections = []
 
     for company, urls in COMPETITOR_SOURCES.items():

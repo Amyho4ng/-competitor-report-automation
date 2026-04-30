@@ -98,10 +98,6 @@ COMPETITOR_SOURCES = {
         "https://www.wipro.com/newsroom/",
         "https://www.wipro.com/blogs/",
     ],
-    "Infosys": [
-        "https://www.infosys.com/newsroom/",
-        "https://www.infosys.com/insights/",
-    ],
     "Slalom": [
         "https://www.slalom.com/insight",
         "https://www.slalom.com/news",

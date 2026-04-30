@@ -162,3 +162,157 @@ Traceback (most recent call last):
     return codecs.charmap_encode(input,self.errors,encoding_table)[0]
            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
+>>> USING REPORT_BUILDER FROM: C:\Users\AmyHoang\Competitor_report\-competitor-report-automation\src\report_builder.py
+Generating competitor insights for: 2026-04-08 to 2026-04-22
+
+[Manuka]
+    Fetching: https://www.manuka.com/news/
+    Found 0 verified recent articles
+
+[Infosys]
+    Fetching: https://www.infosys.com/newsroom/
+    [scrape] Could not fetch https://www.infosys.com/newsroom/: 403 Client Error: Forbidden for url: https://www.infosys.com/newsroom/
+    Fetching: https://www.infosys.com/insights/
+    [scrape] Could not fetch https://www.infosys.com/insights/: 403 Client Error: Forbidden for url: https://www.infosys.com/insights/
+    Found 0 verified recent articles
+
+[Dufrain]
+    Fetching: https://www.dufrain.co.uk/insights/
+    [scrape] Could not fetch https://www.dufrain.co.uk/insights/: 404 Client Error: Not Found for url: https://www.dufrain.co.uk/insights/
+    Fetching: https://www.dufrain.co.uk/news/
+    [scrape] Could not fetch https://www.dufrain.co.uk/news/: 404 Client Error: Not Found for url: https://www.dufrain.co.uk/news/
+    Found 0 verified recent articles
+
+[Billigence]
+    Fetching: https://www.billigence.com/news/
+    [scrape] Could not fetch https://www.billigence.com/news/: 403 Client Error: Forbidden for url: https://www.billigence.com/news/
+    Fetching: https://www.billigence.com/blog/
+    [scrape] Could not fetch https://www.billigence.com/blog/: 403 Client Error: Forbidden for url: https://www.billigence.com/blog/
+    Found 0 verified recent articles
+
+[Unifeye]
+    Fetching: https://www.unifeye.com/news/
+    [scrape] Could not fetch https://www.unifeye.com/news/: HTTPSConnectionPool(host='www.unifeye.com', port=443): Max retries exceeded with url: /news/ (Caused by NameResolutionError("HTTPSConnection(host='www.unifeye.com', port=443): Failed to resolve 'www.unifeye.com' ([Errno 11001] getaddrinfo failed)"))
+    Fetching: https://www.unifeye.com/blog/
+    [scrape] Could not fetch https://www.unifeye.com/blog/: HTTPSConnectionPool(host='www.unifeye.com', port=443): Max retries exceeded with url: /blog/ (Caused by NameResolutionError("HTTPSConnection(host='www.unifeye.com', port=443): Failed to resolve 'www.unifeye.com' ([Errno 11001] getaddrinfo failed)"))
+    Found 0 verified recent articles
+
+[Lumilinks]
+    Fetching: https://www.lumilinks.com/news/
+    [scrape] Could not fetch https://www.lumilinks.com/news/: 404 Client Error: Not Found for url: https://www.lumilinks.com/news/
+    Fetching: https://www.lumilinks.com/blog/
+    Found 0 verified recent articles
+
+[NTT Data]
+    Fetching: https://www.nttdata.com/global/en/media/press-release
+    [scrape] Could not fetch https://www.nttdata.com/global/en/media/press-release: 404 Client Error: Not Found for url: https://www.nttdata.com/global/en/404
+    Fetching: https://www.nttdata.com/global/en/insights/news
+    [scrape] Could not fetch https://www.nttdata.com/global/en/insights/news: 404 Client Error: Not Found for url: https://www.nttdata.com/global/en/404
+    Found 0 verified recent articles
+
+[Capgemini]
+    Fetching: https://www.capgemini.com/gb-en/news/
+    Fetching: https://www.capgemini.com/gb-en/insights/
+    Found 2 verified recent articles
+
+[Version 1]
+    Fetching: https://www.version1.com/news/
+    Fetching: https://www.version1.com/blog/
+    Found 13 verified recent articles
+
+[Oakland]
+    Fetching: https://www.oakland.io/news/
+    Fetching: https://www.oakland.io/blog/
+    Found 0 verified recent articles
+
+[CACI]
+    Fetching: https://www.caci.co.uk/news/
+    Fetching: https://www.caci.co.uk/blog/
+    Found 1 verified recent articles
+
+[Cognizant]
+    Fetching: https://news.cognizant.com/
+    Fetching: https://www.cognizant.com/en_us/news.html
+    Found 1 verified recent articles
+
+[Made Tech]
+    Fetching: https://www.madetech.com/news/
+    [scrape] Could not fetch https://www.madetech.com/news/: 403 Client Error: Forbidden for url: https://www.madetech.com/news/
+    Fetching: https://www.madetech.com/blog/
+    [scrape] Could not fetch https://www.madetech.com/blog/: 403 Client Error: Forbidden for url: https://www.madetech.com/blog/
+    Found 0 verified recent articles
+
+[BAE Systems Digital Intelligence]
+    Fetching: https://www.baesystems.com/en/digital/home
+    [scrape] Could not fetch https://www.baesystems.com/en/digital/home: 403 Client Error: Forbidden for url: https://www.baesystems.com/en/digital/home
+    Fetching: https://www.baesystems.com/en/our-company/news-room
+    [scrape] Could not fetch https://www.baesystems.com/en/our-company/news-room: 403 Client Error: Forbidden for url: https://www.baesystems.com/en/our-company/news-room
+    Found 0 verified recent articles
+
+[Civica]
+    Fetching: https://www.civica.com/en-gb/news/
+    Fetching: https://www.civica.com/en-gb/blog/
+    [scrape] Could not fetch https://www.civica.com/en-gb/blog/: 404 Client Error: Not Found for url: https://www.civica.com/en-gb/blog/
+    Found 0 verified recent articles
+
+[Telefonica Tech]
+    Fetching: https://telefonicatech.com/en/newsroom/
+    [scrape] Could not fetch https://telefonicatech.com/en/newsroom/: 404 Client Error: Not Found for url: https://telefonicatech.com/en/newsroom
+    Fetching: https://telefonicatech.com/en/blog/
+    Found 15 verified recent articles
+
+[Ernst and Young]
+    Fetching: https://www.ey.com/en_uk/newsroom
+    Fetching: https://www.ey.com/en_uk/insights
+    Found 0 verified recent articles
+
+[CGI]
+    Fetching: https://www.cgi.com/en/newsroom
+    Fetching: https://www.cgi.com/en/blog
+    Found 1 verified recent articles
+
+[Equal Experts]
+    Fetching: https://www.equalexperts.com/blog/
+    Fetching: https://www.equalexperts.com/news/
+    [scrape] Could not fetch https://www.equalexperts.com/news/: 404 Client Error: Not Found for url: https://www.equalexperts.com/news/
+    Found 1 verified recent articles
+
+[Accenture]
+    Fetching: https://newsroom.accenture.com/news/
+    Fetching: https://www.accenture.com/gb-en/blogs/
+    Found 0 verified recent articles
+
+[Devoteam]
+    Fetching: https://www.devoteam.com/press-release/
+    Fetching: https://www.devoteam.com/blog/
+    Found 1 verified recent articles
+
+[Advancing Analytics]
+    Fetching: https://www.advancinganalytics.co.uk/blog
+    Fetching: https://www.advancinganalytics.co.uk/news
+    Found 1 verified recent articles
+
+[Deloitte]
+    Fetching: https://www.deloitte.com/uk/en/about/press-room.html
+    Fetching: https://www.deloitte.com/uk/en/blog.html
+    [scrape] Could not fetch https://www.deloitte.com/uk/en/blog.html: 404 Client Error: Not Found for url: https://www.deloitte.com/uk/en/blog.html
+    Found 1 verified recent articles
+
+[KPMG]
+    Fetching: https://kpmg.com/uk/en/home/media/press-releases.html
+    Fetching: https://kpmg.com/uk/en/home/insights.html
+    Found 1 verified recent articles
+
+[Wipro]
+    Fetching: https://www.wipro.com/newsroom/
+    Fetching: https://www.wipro.com/blogs/
+    Found 0 verified recent articles
+
+[Slalom]
+    Fetching: https://www.slalom.com/insight
+    [scrape] Could not fetch https://www.slalom.com/insight: 404 Client Error: Not Found for url: https://www.slalom.com/insight
+    Fetching: https://www.slalom.com/news
+    [scrape] Could not fetch https://www.slalom.com/news: 404 Client Error: Not Found for url: https://www.slalom.com/news
+    Found 0 verified recent articles
+Report saved at: C:\Users\AmyHoang\OneDrive - Kubrick Group\Bids and Proposals - competitor analysis\competitor_report_2026-04-08_to_2026-04-22.html
+Report generation complete.
