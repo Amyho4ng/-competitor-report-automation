@@ -174,32 +174,34 @@ def scrape_competitor(company: str, urls: list[str], cutoff: datetime) -> list[d
 
     return unique
 
-
 def format_with_gpt(company: str, links: list[dict]) -> str:
     client = OpenAI()
 
     if not links:
-        return f"### {company}\n- No recent news found in the past two weeks."
+        return None
 
     link_block = "\n".join(
         f"{i+1}. {l['text']} ({l['date']}) — {l['href']}"
         for i, l in enumerate(links)
     )
 
-    prompt = f"""You are writing a monthly competitor intelligence digest for {company}.
+    prompt = f"""You are writing a bi-weekly competitor intelligence digest for {company}.
 
-Below are real, verified news items scraped from their website.
+Below are real, verified news items scraped from their website with their URLs.
 
 Summarise these into concise bullet points — one bullet per distinct topic or theme.
 Each bullet should be a clean, factual sentence describing what the company did or announced.
+At the end of each bullet, include the most relevant source URL in this exact format: [URL: https://...]
 
 Rules:
 - No dates in the bullets
-- No URLs or source references
 - No preamble or commentary
 - Start each bullet with *
-- Group similar items into one bullet if they overlap
+- Start each bullet with an action verb (e.g. "Announced", "Launched", "Partnered", "Highlighted")
+- Never start a bullet with the company name or "The company"
+- Group similar items into one bullet if they overlap, use the most relevant URL
 - Maximum 10 bullets
+- Only use URLs from the list below, do not invent URLs
 
 Items:
 {link_block}
@@ -221,8 +223,7 @@ Items:
     if bullets:
         return f"### {company}\n" + "\n".join(bullets)
     else:
-        return f"### {company}\n* No recent news found in the past two weeks."
-
+        return None
 
 def generate_competitor_insights(period_label: str) -> str:
     cutoff = datetime.today() - timedelta(days=14)
@@ -233,6 +234,7 @@ def generate_competitor_insights(period_label: str) -> str:
         links = scrape_competitor(company, urls, cutoff)
         print(f"    Found {len(links)} verified recent articles")
         section = format_with_gpt(company, links)
-        sections.append(section)
+        if section is not None:  # only add if news was found
+            sections.append(section)
 
     return "\n\n".join(sections)
